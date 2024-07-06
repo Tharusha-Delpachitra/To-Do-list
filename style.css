@@ -1,0 +1,87 @@
+/* Existing CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.container {
+    background: white;
+    padding: 10px;
+    margin: 5% 10%;
+    border-radius: 10px;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.icon {
+    height: 70px;
+    width: 60px;
+}
+
+input {
+    font: 2rem;
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+ul.task-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    flex-grow: 1;
+    overflow-y: auto; /* Allow scrolling if list grows too long */
+    max-height: 60vh; /* Adjust as needed */
+}
+
+li {
+    list-style-type: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    padding: 5px;
+    display: flex;
+    gap: 1%;
+    align-items: center;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.done-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.task-text {
+    flex-grow: 2; /* Allows the text to take up available space */
+}
